@@ -6,28 +6,6 @@ namespace Ilia.FolhaDePonto.Api.Utils
 {
     public static class MapUtils
     {
-        public static RelatorioVO RelatorioEntityParaRelatorioVO(RelatorioEntity relatorioEntity)
-        {
-            return new RelatorioVO()
-            {
-                Mes = relatorioEntity.Mes,
-                HorasDevidas = relatorioEntity.HorasDevidas,
-                HorasExcedentes = relatorioEntity.HorasExcedentes,
-                HorasTrabalhadas = relatorioEntity.HorasTrabalhadas
-            };
-        }
-
-        public static RelatorioEntity RelatorioVOParaRelatorioEntity(RelatorioVO relatorioVO)
-        {
-            return new RelatorioEntity()
-            {
-                Mes = relatorioVO.Mes,
-                HorasDevidas = relatorioVO.HorasDevidas,
-                HorasExcedentes = relatorioVO.HorasExcedentes,
-                HorasTrabalhadas = relatorioVO.HorasTrabalhadas
-            };
-        }
-
         public static AlocacaoVO AlocacaoEntityParaAlocacaoVO(AlocacaoEntity alocacaoEntity)
         {
             return new AlocacaoVO()
@@ -67,7 +45,5 @@ namespace Ilia.FolhaDePonto.Api.Utils
                 Horarios = RegistroUtils.OrdernaHorariosParaString(registroVO.Horarios)
             };
         }
-
-
     }
 }
