@@ -4,7 +4,7 @@ O Desafio Ilia foi desenvolvido em .NET 6. Podendo ser executado localmente via 
 
 <ol>
   <li>Pré-Requisitos: Ter o Docker instalado na Máquina</li>
-  <li>Execute o comando a seguir para baixar o banco de Dados: docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<SENHA>" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest</li>
+  <li>Execute o comando a seguir para baixar o banco de Dados: docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD= **SENHA** " -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest</li>
   <li>Acesse o SQL Server e crie Banco de Dados 'desafio_ilia_db' </li>
   <li>Após isso, atualize o appsetting.json com o SERVER, BANCO DE DADOS, USUARIO E A SENHA </li>
   <li>Acesso o Visual Studio da Solution e execute em sequencia os commandos 'Add-Migration PrimeiraMigracao' e após isso 'Update-Database'</li>
